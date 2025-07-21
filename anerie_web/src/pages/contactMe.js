@@ -33,7 +33,7 @@ function Contact() {
                 <EmailIcon sx={{ fontSize: 40, color: 'primary.main', '&:hover': { color: 'secondary.main' } }} />
             </a>
 
-            <button onClick={() => navigate(-1)}>Back</button>
+            <button onClick={() => navigate('/')}>Back</button>
         </div>
     )
 }
