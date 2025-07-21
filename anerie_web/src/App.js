@@ -1,14 +1,20 @@
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from "./pages/home";
+import About from "./pages/aboutMe";
+import Projects from "./pages/projects";
+import Contact from "./pages/contactMe";
 
 function App() {
-
   return (
-    <div className="App">
-      <div className="bg">
-
-      <h1>Welcome to My First React App!</h1>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} /> 
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
