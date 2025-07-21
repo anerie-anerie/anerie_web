@@ -1,0 +1,39 @@
+.aboutBg {
+    background-image: url("../img/aboutBg.png");
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;   /* centers horizontally */
+    align-items: center;       /* centers vertically */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+
+  button {
+    position: fixed;
+    bottom: 5vw;
+    right: 5vh;
+    background-color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+    transform: scale(1.1);
+  }
+  
+  .pfp {
+    background-image: url("../img/pfp.png");
+    height: 40vh;
+    width: 40vw;
+    position: fixed;
+    left: 40vw;
+    bottom: 20vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
