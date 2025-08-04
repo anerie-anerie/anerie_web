@@ -1,25 +1,49 @@
-.App {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .buttonContainer {
-    position: fixed;        /* Fixes the buttons relative to the viewport */
-    bottom: 20px;           /* 20px from bottom */
-    right: 20px;            /* 20px from right */
-    display: flex;
-    gap: 15px;              /* space between buttons */
-  }
-  
-  .buttonContainer img {
-    width: 50px;            /* size of each button image */
-    height: 50px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-  }
-  
-  .buttonContainer img:hover {
-    transform: scale(1.1);  /* subtle hover effect */
-  }
-  
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+
+
+.buttonContainer {
+  position: fixed;        /* Fixes the buttons relative to the viewport */
+  bottom: 20px;           /* 20px from bottom */
+  right: 20px;            /* 20px from right */
+  display: flex;
+  gap: 15px;              /* space between buttons */
+}
+
+.buttonContainer img {
+  width: 50px;            /* size of each button image */
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.buttonContainer img:hover {
+  transform: scale(1.1);  /* subtle hover effect */
+}
+
+.bg {
+  background-image: url("../img/mainBg.png");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.fullName {
+  background-image: url("../img/anerie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 100vh;
+  pointer-events: none;
+}
