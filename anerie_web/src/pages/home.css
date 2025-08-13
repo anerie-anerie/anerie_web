@@ -23,7 +23,7 @@ html, body {
 
 .bg {
   background-image: url("../img/mainBg.png");
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   display: flex;
   flex-direction: column; 

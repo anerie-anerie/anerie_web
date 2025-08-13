@@ -14,7 +14,7 @@ function Contact() {
               rel="noopener noreferrer"
               style={{ color: 'inherit' }}
             >
-                <GitHubIcon sx={{ fontSize: 40, color: 'primary.main', '&:hover': { color: 'secondary.main' } }} />
+                <GitHubIcon sx={{ fontSize: 60, color: '#BBE6E9', '&:hover':  {transform: 'scale(1.2)'}}} />
             </a>
 
             <a 
@@ -23,17 +23,17 @@ function Contact() {
               rel="noopener noreferrer"
               style={{ color: 'inherit' }}
             >
-                <LinkedInIcon sx={{ fontSize: 40, color: 'primary.main', '&:hover': { color: 'secondary.main' } }} />
+                <LinkedInIcon sx={{ fontSize: 60, color: '#BBE6E9', '&:hover':  {transform: 'scale(1.2)'}}} />
             </a>
 
             <a 
               href="mailto:aneriep@gmail.com" 
               style={{ color: 'inherit' }}
             >
-                <EmailIcon sx={{ fontSize: 40, color: 'primary.main', '&:hover': { color: 'secondary.main' } }} />
+                <EmailIcon sx={{ fontSize: 60, color: '#BBE6E9', '&:hover':  {transform: 'scale(1.2)'}}} />
             </a>
 
-            <button onClick={() => navigate('/')}>Back</button>
+            <button className="button" onClick={() => navigate('/')}></button>
         </div>
     )
 }

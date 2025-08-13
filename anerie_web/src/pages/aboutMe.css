@@ -42,3 +42,75 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+.shark {
+  background-image: url("../img/shark.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  width: 50vw;
+  bottom: 3vw;
+  right: 15vw;
+}
+
+.flower{
+  background-image: url("../img/flower.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+  width: 50vw;
+  bottom: 4vw;
+  left: 10vw;
+}
+
+.books {
+  background-image: url("../img/book.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35vh;
+  width: 50vw;
+  bottom: 4vw;
+  left: -20vw;
+}
+
+.music {
+  background-image: url("../img/music.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+  width: 50vw;
+  bottom: 60vh;
+  right: -10vw;
+}
+
+.cupcake {
+  background-image: url("../img/cupcake.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 25vh;
+  width: 50vw;
+  bottom: 13vh;
+  right: -10vw;
+}
+
+.sol {
+  background-image: url("../img/sol.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20vh;
+  width: 50vw;
+  bottom: 60vh;
+  left: -10vw;
+}

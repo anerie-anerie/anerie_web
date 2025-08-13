@@ -5,7 +5,7 @@ function Projects() {
     return (
         <div>
         <h1> hello! you are in projects</h1>
-        <button onClick={() => navigate('/')}>Back</button>
+        <button className="button" onClick={() => navigate('/')}></button>
         </div>
     )
 }
