@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+}
+
+.buttonContainer {
+  right: 8vh;  
+  margin-top: 30px;
+  gap: 20px;              /* space between buttons */
+}
+
+.buttonContainer img {
+  width: 17vw;            /* size of each button image */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.buttonContainer img:hover {
+  transform: scale(1.1);  /* subtle hover effect */
+}
+
+.bg {
+  background-image: url("../img/mainBg.png");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column; 
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fullName {
+  background-image: url("../img/anerie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80vw;
+  aspect-ratio: 4 / 1; /* maintains logo shape without fixed vh height */
+  pointer-events: none;
+}
