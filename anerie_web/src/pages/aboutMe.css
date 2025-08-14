@@ -1,9 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   overflow-x: scroll;  /* Allow horizontal scroll */
-  overflow-y: hidden;  /* No vertical scroll */
+  overflow-y: auto;  /* No vertical scroll */
 }
 
 .aboutBg {
@@ -13,7 +12,7 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  display: block;
+  display: flex;
   position: relative;
 }
 
@@ -123,4 +122,20 @@ html, body {
   width: 170px;
   bottom: 450px;
   right: 1300px;
+}
+
+@media (max-width: 1400px) {
+  html, body {
+    overflow-x: auto;   /* horizontal scroll allowed */
+    overflow-y: auto;   /* vertical scroll stays */
+  }
+
+  .aboutBg {
+    width: 1600px; /* make the container twice as wide as viewport */
+  }
+
+  /* If your fixed elements need to scroll, switch them to absolute */
+  .pfp, .shark, .flower, .books, .music, .cupcake, .sol {
+    position: absolute;
+  }
 }

@@ -1,35 +1,52 @@
 .contactBg {
-    background-image: url("../img/contactBg.png");
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;   /* centers horizontally */
-    align-items: center;       /* centers vertically */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  
-  }
+  background-image: url("../img/contactBg.png");
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  .button {
-    background-image: url("../img/back.png");
-    width: 17vw;
-    height: 7vh;
-    position: fixed;
-    transition: transform 0.2s ease;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent; 
-    cursor: pointer;
-    transition: transform 0.2s ease;
-    border: none;
-    background-color: transparent; 
-    right: 2px;
-    bottom: 25px;
+.contactContent {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;
+  gap: 15px;
+  width: 80%;
+  max-width: 600px;
+}
 
-  }
+.contactSocialSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
 
-.button:hover {
+.socialIcons {
+  display: flex;
+  gap: 40px;
+}
+
+.buttonBack {
+  background-image: url("../img/back.png");
+  width: 17vw;
+  height: 7vh;
+  position: fixed;
+  right: 2px;
+  bottom: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  transition: transform 0.2s ease;
+}
+
+.buttonBack:hover {
   transform: scale(1.1);
 }
