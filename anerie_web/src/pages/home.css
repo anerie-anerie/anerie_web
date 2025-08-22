@@ -34,8 +34,8 @@
 .buttonContainer img {
   width: 17vw;            /* size of each button image */
   cursor: pointer;
-  transition: transform 0.2s ease;
   transition: opacity 0.4s ease-in-out;
+  transition: transform 0.2s ease;
 }
 
 .buttonContainer img:hover {
@@ -63,4 +63,34 @@
   width: 80vw;
   aspect-ratio: 4 / 1; /* maintains logo shape without fixed vh height */
   pointer-events: none;
+}
+
+
+.topButtons {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: flex;
+  gap: 20px; /* space between buttons */
+  z-index: 10;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.iconButton img {
+  width: 78px;
+  height: 48px;
+}
+
+.iconButton:hover {
+  transform: scale(1.1);
 }

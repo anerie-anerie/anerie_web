@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './photobooth.css';
-import mainBg from '../img/mainBg.png';
 
 function Photobooth() {
   const videoRef = useRef(null);
@@ -159,36 +158,51 @@ function Photobooth() {
   
   return (
     <div className="App">
-      <h2>Welcome to the Photobooth 📸</h2>
+      <div className="boothTitle"></div>
       <h3>Take some cute pics! You can take a max of 3 photos then download.</h3>
 
       <video ref={videoRef} autoPlay playsInline className="video" />
       <canvas ref={canvasRef} style={{ display: 'none' }} />
 
       <div style={{ marginTop: '10px' }}>
-  <button onClick={takePhoto} disabled={photos.length >= 3}>
-    {photos.length < 3 ? 'Take Photo' : 'Max 3 Photos'}
-  </button>
+      <button
+  className="photoboothButton"
+  onClick={takePhoto}
+  disabled={photos.length >= 3}
+>
+  {photos.length < 3 ? 'Take Photo' : 'Max 3 Photos'}
+</button>
+
+<button
+  className="photoboothButton"
+  onClick={resetPhotos}
+  disabled={photos.length === 0}
+  style={{ marginLeft: '2vw' }}
+>
+  Reset
+</button>
+
+<button
+  className="photoboothButton"
+  onClick={downloadPhotos}
+  disabled={photos.length !== 3}
+  style={{ marginLeft: '2vw' }}
+>
+  Download Strip
+</button>
+
 
   <button
-    onClick={resetPhotos}
-    disabled={photos.length === 0} // only enabled if at least 1 photo
-    style={{ marginLeft: '2vw' }}
-  >
-    Reset
-  </button>
+  className="buttonBack"
+  onClick={() => {
+    if (streamRef.current) {
+      streamRef.current.getTracks().forEach((track) => track.stop());
+    }
+    navigate(-1);
+  }}
+></button>
 
-  <button
-    onClick={downloadPhotos}
-    disabled={photos.length !== 3} // only enabled at exactly 3 photos
-    style={{ marginLeft: '2vw' }}
-  >
-    Download Strip
-  </button>
 
-  <div className="top-right">
-    <button onClick={goHome}>Go Home</button>
-  </div>
 </div>
 
 
@@ -199,7 +213,7 @@ function Photobooth() {
           value={bgColor}
           onChange={(e) => setBgColor(e.target.value)}
         >
-          <option value="#fff0b7">Off-White</option>
+          <option value="#E5E5E5">Off-White</option>
           <option value="#000000">Black</option>
           <option value="#dd8dcd">Pink</option>
           <option value="#a6d8b3">Green</option>

@@ -1,6 +1,6 @@
 .contactBg {
   background-image: url("../img/contactBg.png");
-  min-height: 100vh;
+  min-height: 800px;
   width: 100vw;
   display: flex;
   justify-content: center;

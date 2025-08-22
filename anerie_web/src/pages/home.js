@@ -32,27 +32,24 @@ function Home() {
           backgroundImage: `url(${isLightMode ? lightBg : darkBg})`,
         }}
       >
-        {/* Theme toggle button */}
-        <div className="themeToggle" onClick={toggleTheme}>
-          <img 
-            src={isLightMode ? moonIcon : sunIcon} 
-            alt="Toggle Theme" 
-            style={{ width: '40px', cursor: 'pointer' }}
-          />
-        </div>
-        
-        <div 
-          className="header-icon" 
-          onClick={() => navigate('/photobooth')} 
-          style={{ cursor: 'pointer' }}
-        >
-          <CameraAltIcon 
-            sx={{ 
-              fontSize: 40, 
-              color: isLightMode ? '#0A005B' : '#BBE6E9' // same as your sun/moon scheme
-            }} 
-          />
-        </div>
+        <div className="topButtons">
+  <div className="iconButton" onClick={toggleTheme}>
+    <img 
+      src={isLightMode ? moonIcon : sunIcon} 
+      alt="Toggle Theme" 
+    />
+  </div>
+
+  <div className="iconButton" onClick={() => navigate('/photobooth')}>
+    <CameraAltIcon 
+      style={{ 
+        fontSize: 40, 
+        color: isLightMode ? '#0A005B' : '#BBE6E9' 
+      }} 
+    />
+  </div>
+</div>
+
 
         <div className="fullName"
         style={{
