@@ -1,0 +1,145 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: scroll;  /* Allow horizontal scroll */
+  overflow-y: auto;  /* No vertical scroll */
+}
+
+.aboutBg {
+  background-image: url("../img/aboutBg.png");
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  position: relative;
+}
+
+
+.button {
+  background-image: url("../img/back.png");
+  width: 17vw;
+  height: 7vh;
+  position: fixed;
+  transition: transform 0.2s ease;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent; 
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: none;
+  background-color: transparent; 
+  right: 2px;
+  bottom: 25px;
+
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.pfp {
+  background-image: url("../img/pfp.png");
+  height: 250px;
+  width: 300px;
+  position: fixed;
+  right: 400px;
+  bottom: 300px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shark {
+  background-image: url("../img/shark.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  width: 450px;
+  bottom: -10px;
+  right: 400px;
+}
+
+.flower{
+  background-image: url("../img/flower.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 470px;
+  width: 350px;
+  bottom: 40px;
+  right: 900px;
+}
+
+.books {
+  background-image: url("../img/book.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 330px;
+  width: 270px;
+  bottom: 40px;
+  right: 1300px;
+}
+
+.music {
+  background-image: url("../img/music.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  width: 170px;
+  bottom: 500px;
+  right: 80px;
+}
+
+.cupcake {
+  background-image: url("../img/cupcake.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 190px;
+  bottom: 50px;
+  right: 120px;
+}
+
+.sol {
+  background-image: url("../img/sol.png");
+  position: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 170px;
+  width: 170px;
+  bottom: 450px;
+  right: 1250px;
+}
+
+@media (max-width: 1400px) {
+  html, body {
+    overflow-x: auto;   /* horizontal scroll allowed */
+    overflow-y: auto;   /* vertical scroll stays */
+  }
+
+  .aboutBg {
+    width: 1600px; /* make the container twice as wide as viewport */
+    background-size: 90% auto;
+    min-height: 100vh;
+    background-color: #0A005B;
+
+  }
+
+  /* If your fixed elements need to scroll, switch them to absolute */
+  .pfp, .shark, .flower, .books, .music, .cupcake, .sol {
+    position: absolute;
+  }
+}

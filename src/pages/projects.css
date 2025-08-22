@@ -1,0 +1,134 @@
+/* Colors */
+:root {
+  --text-color: #BCE6E9;
+  --link-color: #B90386;
+}
+
+/* Button */
+.button {
+  background-image: url("../img/back.png");
+  width: 17vw;
+  height: 7vh;
+  position: fixed;
+  right: 2px;
+  bottom: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+/* Background */
+.projectBg {
+  background-image: url("../img/mainBg.png");
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background 0.5s ease-in-out;
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Title */
+.title {
+  background-image: url("../img/projecttitle.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 120px;
+  margin: 40px auto 0 auto;
+  pointer-events: none;
+}
+
+/* Project container */
+.projectContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Each project box */
+.project {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 30px;
+  width: 350px;
+  color: var(--text-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+/* Title inside project */
+.projectTitle {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Description text */
+.projectDescription {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Skills (tags) */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.skill {
+  background-color: #ffffff22;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+}
+
+/* Project links */
+.projectLink {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 8px;
+  transition: color 0.3s ease;
+}
+
+.projectLink:hover {
+  text-decoration: underline;
+  color: #e91ea4; /* Optional hover shade */
+}
+
+/* Coming soon message */
+.comingSoon {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 30px;
+  color: var(--text-color);
+}
