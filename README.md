@@ -1,8 +1,7 @@
-# anerie_web
-This is my first commit
+# Anerie's Portfolio Website
+This is Anerie's Portfolio website!
+- check it out to learn more about me
+- click through the cool features like the photobooth!
 
-## What is this?
-This will be Anerie's portfolio website.
-
-## Framework
-react
+## How I build it
+- react framework
