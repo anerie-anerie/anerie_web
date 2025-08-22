@@ -213,12 +213,12 @@ function Photobooth() {
           value={bgColor}
           onChange={(e) => setBgColor(e.target.value)}
         >
-          <option value="#E5E5E5">Off-White</option>
-          <option value="#000000">Black</option>
-          <option value="#dd8dcd">Pink</option>
-          <option value="#a6d8b3">Green</option>
-          <option value="#aecde4">Blue</option>
-          <option value="#bfbfbf">Gray</option>
+          <option value="#B33951">Pink</option>
+          <option value="#0A005B">Navy</option>
+          <option value="#B90386">Magneta</option>
+          <option value="#04724D">Green</option>
+          <option value="#BCE6E9">Light Blue</option>
+          <option value="AAB3CE">Gray</option>
         </select>
       </div>
 
